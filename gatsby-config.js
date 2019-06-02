@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-      title: 'Full-Stack Bootcamp',
-      author: 'RJ Nawara'
+      title: "Andrea's Blog",
+      author: 'Andrea Nawara'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
         resolve: 'gatsby-source-contentful',
         options: {
-            spaceId: process.env.CONTENTFUL_SPACE_ID,
-            accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+            spaceId: 'vqazmdss4ml5',
+            accessToken: 'nbBghni0O6DOf4LbjMLddsjgA91JGm4hAhWupPNSO98'
         }
     },
     'gatsby-plugin-sass',
@@ -20,6 +20,15 @@ module.exports = {
             path: `${__dirname}/src/`
         }
     },
+    {
+        resolve: `gatsby-plugin-google-fonts`,
+        options: {
+          fonts: [
+            `limelight`,
+            `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+          ]
+        }
+      },
     'gatsby-plugin-sharp',
     {
         resolve: 'gatsby-transformer-remark',
