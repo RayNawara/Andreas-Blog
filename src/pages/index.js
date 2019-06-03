@@ -11,7 +11,7 @@ const IndexPage = () => {
     <Layout>
     <Head title="Home" />
       <h1 className={headerStyles.author}>Hello!</h1>
-      <h2 className={headerStyles.author}>I'm Andrea Nawara and I live in the sunny Tampa area.</h2>
+      <h2 className={headerStyles.author}>I'm Andrea Nawara and I live in the beautiful Tampa area.</h2>
       <img alt="Tampa, Florida" src={require('../images/Tampa.jpg')} />
     </Layout>
   )
